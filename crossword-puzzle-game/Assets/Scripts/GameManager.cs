@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject grid;
+    public GameObject simpleLetterGrid;
     // Start is called before the first frame update
     void Start()
     {//5x9 grid
@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
         {
             for(int j = -4; j<5; j++)//9
             {
-                Instantiate(grid, new Vector2(i,j), Quaternion.identity);
+                Instantiate(simpleLetterGrid, new Vector2(i,j), Quaternion.identity);
             }
         }
 
