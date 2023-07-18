@@ -1,20 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MainManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    // You can define variables and references to other scripts/components here
-
-    // Use this for initialization
+    public GameObject grid;
+    // Start is called before the first frame update
     void Start()
-    {
-        // Your initialization code goes here
+    {//5x9 grid
+        for(int i = -2; i<3; i++) //5
+        {
+            for(int j = -4; j<5; j++)//9
+            {
+                Instantiate(grid, new Vector2(i,j), Quaternion.identity);
+            }
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Your game update code goes here
+        
     }
-
-    // You can add other methods as needed to manage game state, transitions, etc.
 }

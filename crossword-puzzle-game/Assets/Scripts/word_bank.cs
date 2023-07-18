@@ -1,3 +1,5 @@
+using UnityEngine;
+using System.Collections.Generic; 
 // File: word_bank.cs
 public class WordBank
 {
